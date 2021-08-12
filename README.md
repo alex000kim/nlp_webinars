@@ -1,6 +1,6 @@
 # NLP webinars
 
-NLP webinar materials:
+### Webinar materials
 
 - [Hotel Review Prediction](https://github.com/alex000kim/nlp_webinars/blob/main/1_HotelReviewPrediction.ipynb)
   
@@ -16,3 +16,24 @@ NLP webinar materials:
   
   - Learn how vectorize text using language transformer models
   - Learn how to perform information retrieval (aka similarity search) on text data
+
+### Prerequisites
+
+- [pipenv](https://pipenv.pypa.io/en/latest/)
+
+- [jupyter](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html)
+
+### Setup
+
+```bash
+# Create virtual environment
+pipenv shell
+# Install dependencies
+pipenv install
+# Register this environment's python kernel in jupyter
+python -m ipykernel install --user --name nlp-webinars --display-name "Python (nlp-webinars)"
+# Download `en_core_web_md` model that''' be used later
+python -m spacy download en_core_web_md
+```
+
+After launching jupyter server, verify that the right kernel is used.
