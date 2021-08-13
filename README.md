@@ -32,8 +32,6 @@ pipenv shell
 pipenv install
 # Register this environment's python kernel in jupyter
 python -m ipykernel install --user --name nlp-webinars --display-name "Python (nlp-webinars)"
-# Download `en_core_web_md` model that''' be used later
-python -m spacy download en_core_web_md
 ```
 
 After launching jupyter server, verify that the right kernel is used.
